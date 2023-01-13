@@ -1,0 +1,28 @@
+{id: 'macovich book', age: 12, height: 164, weight: 65, blood: 'AB+',
+          phone: '+44 (0) 7887 665 588', email: 'macovich@book.com', card: '4321 2343 5252 2342',
+          ill: 'Alergies, Astma'},
+{id: 'Epson book', age: 14, height: 167, weight: 75, blood: 'AB+',
+            phone: '+44 (0) 5464 867 645', email: 'Epson@book.com', card: '4321 6234 5252 2346',
+            ill: 'Alergies, Astma'},
+
+
+
+
+<v-col cols="12" sm="3">
+          <v-card color="transparent" class="rounded-lg mx-2 px-2" flat>
+            <span class="caption grey--text mt-n6">Phone Number</span>
+            <h5 class="black--text mb-7">{{ list.phone }}</h5>
+            <span class="caption grey--text">Card number</span>
+            <h5 class="black--text">{{ list.card }}</h5>
+          </v-card>
+        </v-col>
+        <v-col cols="12" sm="5">
+          <v-card color="transparent" class="rounded-lg px-2" flat>
+            <span class="caption grey--text mt-n6">Email</span>
+            <h5 class="black--text mb-7">{{ list.email }}</h5>
+            <span class="caption grey--text">Medical Conditions</span>
+            <h5 class="black--text">
+              {{ list.ill }}
+            </h5>
+          </v-card>
+        </v-col>
